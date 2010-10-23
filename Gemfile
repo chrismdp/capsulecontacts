@@ -16,3 +16,6 @@ group :cucumber do
   gem 'launchy'    # So you can do Then show me the page
 end
 
+group :development do
+  gem 'rspec-rails', '>= 2.0.0.rc'
+end
