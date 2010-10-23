@@ -19,3 +19,6 @@ end
 group :development do
   gem 'rspec-rails', '>= 2.0.0.rc'
 end
+gem "haml", ">=3.0.0"
+gem "compass", ">= 0.10.0"
+gem 'jquery-rails'
