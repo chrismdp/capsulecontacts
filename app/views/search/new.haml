@@ -1,0 +1,9 @@
+#header
+  %h1 Eden Contact List
+
+  = form_tag('/search', class: 'bp') do
+    = label_tag :search, "Find a contact:"
+    %br
+    = text_field_tag :search
+    = submit_tag('Find')
+

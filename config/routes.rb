@@ -1,4 +1,4 @@
 Capsulecontacts::Application.routes.draw do
-  get "pages/home"
-  root to: 'pages#home'
+  match "/search", to: 'search#search'
+  root to: 'search#new'
 end
