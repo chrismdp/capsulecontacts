@@ -22,3 +22,5 @@ end
 gem "haml", ">=3.0.0"
 gem "compass", ">= 0.10.0"
 gem 'jquery-rails'
+
+gem 'party_resource', git: 'git://github.com/chrismdp/party_resource.git'

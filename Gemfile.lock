@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/chrismdp/party_resource.git
+  revision: 05eff9b3ce752afe5792c4eaa51332f95ec9187f
+  specs:
+    party_resource (0.0.3)
+      activesupport (>= 2.3.5)
+      httparty (>= 0.5.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -46,6 +54,7 @@ GEM
     compass (0.10.5)
       haml (>= 3.0.4)
     configuration (1.1.0)
+    crack (0.1.8)
     cucumber (0.8.5)
       builder (~> 2.1.2)
       diff-lcs (~> 1.1.2)
@@ -64,6 +73,8 @@ GEM
     gherkin (2.1.5)
       trollop (~> 1.16.2)
     haml (3.0.22)
+    httparty (0.6.1)
+      crack (= 0.1.8)
     i18n (0.4.1)
     jquery-rails (0.2.4)
       rails (~> 3.0)
@@ -138,6 +149,7 @@ DEPENDENCIES
   haml (>= 3.0.0)
   jquery-rails
   launchy
+  party_resource!
   pg
   rails (= 3.0.1)
   rspec-rails (>= 2.0.0.rc)
