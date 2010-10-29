@@ -10,17 +10,19 @@ group :cucumber do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
-  gem 'cucumber', '0.8.5'
+  gem 'cucumber'
   gem 'rspec-rails', '>= 2.0.0.rc'
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
+  gem 'webmock'
 end
 
 group :development do
   gem 'rspec-rails', '>= 2.0.0.rc'
 end
+
 gem "haml", ">=3.0.0"
 gem "compass", ">= 0.10.0"
 gem 'jquery-rails'
 
-gem 'party_resource', git: 'git://github.com/chrismdp/party_resource.git'
+gem 'party_resource', :git => 'git://github.com/chrismdp/party_resource.git'

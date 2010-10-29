@@ -10,6 +10,18 @@ describe SearchController do
   end
 
   describe "Searching for contacts" do
-    it "asks the capsule API for the contacts first"
+    let(:results) { [mock(:contact)] }
+    before do
+      CapsuleContacts.stub(:search).and_return(results)
+    end
+    it "asks the capsule API for the contacts first" do
+      CapsuleContacts.should_receive(:search).with("query")
+      get 'search', :q => "query"
+    end
+
+    it "asks the capsule API for the contacts first" do
+      get 'search', :q => "query"
+      assigns[:results].should == results
+    end
   end
 end

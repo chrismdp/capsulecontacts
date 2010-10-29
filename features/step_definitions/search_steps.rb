@@ -1,6 +1,6 @@
 When /^I search for "([^"]*)"$/ do |query|
   visit root_path
-  fill_in :search, with: query
+  fill_in "Find", with: query
   click_button 'Find'
 end
 

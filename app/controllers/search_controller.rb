@@ -3,6 +3,7 @@ class SearchController < ApplicationController
   end
 
   def search
+    @results = CapsuleContacts.search(params[:q])
   end
 
 end

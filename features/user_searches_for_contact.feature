@@ -1,7 +1,7 @@
 @contacts_in_capsule
-Feature: Edenite searches for contact
+Feature: User searches for contact
   In order to be able to find contacts without logging into capsule
-  As an Edenite
+  As an User
   I want to easily search for a contact by name, phone or email and be given a list
 
   @wip

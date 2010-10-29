@@ -1,3 +1,3 @@
 Before '@contacts_in_capsule' do
-  # fakeweb stuff here
+  stub_request(:get,"https://:x@edendevelopment.capsulecrm.com/api/party?q=Bob").to_return(:headers => {'Content-type' => 'text/json'},:body => %{{"parties":{"@size":"2","organisation":{"id":"5384785","contacts":{"phone":{"id":"9413881","phoneNumber":"+44(0)877 777 77777"}},"about":"SOURCE: http://blah","pictureURL":"https://url.to/picture","name":"Company"},"person":[{"id":"5316141","contacts":{"email":{"id":"9313439","type":"Work","emailAddress":"bob@example.com"}},"pictureURL":"https://url.to/picture","firstName":"Bob","lastName":"Bowyer"},{"id":"5316141","contacts":{"email":{"id":"9313439","type":"Work","emailAddress":"bob@example.com"}},"pictureURL":"https://url.to/picture","firstName":"Bob","lastName":"Builder"}]}}})
 end
