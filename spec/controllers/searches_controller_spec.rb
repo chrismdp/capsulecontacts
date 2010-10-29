@@ -4,7 +4,7 @@ describe SearchesController do
 
   describe "GET 'new'" do
     it "should be successful" do
-      get 'new'
+      get :new
       response.should be_success
     end
   end
@@ -16,11 +16,11 @@ describe SearchesController do
     end
     it "asks the capsule API for the contacts first" do
       CapsuleContacts.should_receive(:search).with("query")
-      get 'create', :q => "query"
+      post :search, :q => "query"
     end
 
     it "asks the capsule API for the contacts first" do
-      get 'create', :q => "query"
+      post :search, :q => "query"
       assigns[:results].should == results
     end
   end

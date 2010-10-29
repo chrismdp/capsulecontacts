@@ -14,7 +14,7 @@ private
 
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      Rails.env != 'production' || (user_name == 'edendevelopment' && password == 't77cn32X')
+      (user_name == 'edendevelopment' && password == 't77cn32X')
     end
   end
 end

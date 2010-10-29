@@ -2,7 +2,7 @@ class SearchesController < ApplicationController
   def new
   end
 
-  def create
+  def search
     @results = CapsuleContacts.search(params[:q])
     render :results
   end

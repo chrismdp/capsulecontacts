@@ -1,4 +1,4 @@
 Capsulecontacts::Application.routes.draw do
-  resource :search, :only => [:create, :new]
+  match "/search", to: 'searches#search'
   root to: 'searches#new'
 end
