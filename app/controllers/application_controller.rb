@@ -14,7 +14,7 @@ private
 
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      (user_name == 'edendevelopment' && password == 't77cn32X')
+      (user_name == ENV['BASICAUTH_USER'] && password == ENV['BASICAUTH_PASS'])
     end
   end
 end
