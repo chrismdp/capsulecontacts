@@ -30,10 +30,9 @@ module Contactable
 
   module ClassMethods
     def create_contact_methods(data)
-      [
-        create_for(ContactMethod, data[:phone], 'phone'),
-        create_for(ContactMethod, data[:email], 'email')
-      ].flatten
+      %w{phone email}.map do |key|
+        create_for(ContactMethod, data[key], key)
+      end.flatten
     end
   end
 end

@@ -6,6 +6,8 @@ gem 'rails', '3.0.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'ssl_requirement'
+
 group :cucumber do
   gem 'capybara'
   gem 'database_cleaner'

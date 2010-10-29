@@ -12,10 +12,12 @@
     = javascript_include_tag 'application', 'rails'
     = csrf_meta_tag
 
-  %body.bp.two-col
+  %body.bp
     #container
-      - flash.each_pair do |type, message|
-        %div{:class => type}= message
-
-      = yield
+      #header
+        %img{:src => 'http://edendevelopment.co.uk/images/eden_logo.png'}
+      #content
+        - flash.each_pair do |type, message|
+          %div{:class => type}= message
+        = yield
 

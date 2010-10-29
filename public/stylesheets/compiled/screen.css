@@ -81,6 +81,37 @@ a img {
   border: none;
 }
 
+/* line 1, ../../../app/stylesheets/partials/_layout.scss */
+body {
+  background: #264507;
+}
+
+/* line 5, ../../../app/stylesheets/partials/_layout.scss */
+#container {
+  background: white;
+}
+
+/* line 9, ../../../app/stylesheets/partials/_layout.scss */
+#header {
+  background: #1D2800;
+}
+
+/* line 13, ../../../app/stylesheets/partials/_layout.scss */
+#header img {
+  padding-left: 50px;
+}
+
+/* line 17, ../../../app/stylesheets/partials/_layout.scss */
+#content {
+  padding: 50px;
+}
+
+/* line 21, ../../../app/stylesheets/partials/_layout.scss */
+table.contacts {
+  font-size: 1.2em;
+  width: 100%;
+}
+
 /* line 42, ../../../../../.rvm/gems/ruby-1.9.2-p0@capsulecontacts/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 body.bp .box {
   padding: 1.5em;
@@ -133,13 +164,12 @@ body.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 22, ../../../app/stylesheets/screen.scss */
+/* line 24, ../../../app/stylesheets/screen.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
-  font-size: 1.5em;
 }
 /* line 68, ../../../../../.rvm/gems/ruby-1.9.2-p0@capsulecontacts/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
@@ -504,14 +534,14 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 35, ../../../app/stylesheets/screen.scss */
+/* line 36, ../../../app/stylesheets/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 37, ../../../app/stylesheets/screen.scss */
+/* line 38, ../../../app/stylesheets/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -522,7 +552,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 39, ../../../app/stylesheets/screen.scss */
+/* line 40, ../../../app/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -533,7 +563,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 43, ../../../app/stylesheets/screen.scss */
+/* line 44, ../../../app/stylesheets/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;

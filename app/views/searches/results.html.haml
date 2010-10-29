@@ -1,0 +1,17 @@
+%h1= "Search results for '#{params[:q]}'"
+
+%p
+  %a{:href => new_search_path}
+    << Back
+
+%table.contacts
+  - @results.each do |result|
+    %tr.contact{:class => cycle(:even, :odd)}
+      %td.photo= image_tag(result.picture_url)
+      %td.name
+        %h2= result.name
+      %td.contact_methods
+        - result.contact_methods.each do |method|
+          .method
+            = image_tag("/images/#{method.type}_16.png")
+            = "#{method.value} (#{method.location || 'Unknown'})"
