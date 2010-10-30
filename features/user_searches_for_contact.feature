@@ -11,11 +11,3 @@ Feature: User searches for contact
   Scenario: Multiple matches
     When I search for "Jean"
     Then I should get 3 contacts back
-
-  Scenario: Searching by phone number
-    When I search for "1962"
-    Then I should get 2 contacts back
-
-  Scenario: Searching by email
-    When I search for "edendevelopment.co.uk"
-    Then I should get 1 contact back

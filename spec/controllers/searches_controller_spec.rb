@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe SearchesController do
-
   describe "GET 'new'" do
     it "should be successful" do
       get :new
@@ -16,11 +15,11 @@ describe SearchesController do
     end
     it "asks the capsule API for the contacts first" do
       CapsuleContacts.should_receive(:search).with("query")
-      post :search, :q => "query"
+      post :create, :q => "query"
     end
 
     it "asks the capsule API for the contacts first" do
-      post :search, :q => "query"
+      post :create, :q => "query"
       assigns[:results].should == results
     end
   end

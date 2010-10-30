@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   include SslRequirement
 
   def ssl_required?
-    Rails.env != 'development'
+    Rails.env == 'production'
   end
 
   protect_from_forgery
@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
 private
 
   def authenticate
+    return if Rails.env != 'production'
     authenticate_or_request_with_http_basic do |user_name, password|
       (user_name == ENV['BASICAUTH_USER'] && password == ENV['BASICAUTH_PASS'])
     end

@@ -1,12 +1,3 @@
-PartyResource::Connector.add(:capsule,
-  base_uri: 'https://edendevelopment.capsulecrm.com/api',
-  username: ENV['CAPSULEAPI_KEY'], password: 'x',
-  headers: {
-    'Accept' => 'application/json',
-    'Content-type' => 'application/json',
-    'User-agent' => 'edendevelopment-capsulecontacts/v0.1' });
-
-#PartyResource.logger = lambda {|msg| puts "PR: "+msg }
 module FromJsonUtils
 
   def self.included(klass)
